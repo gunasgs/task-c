@@ -43,7 +43,7 @@ function Home() {
             {data.map((e) => {
               return (
                 <>
-                  <div class="col-lg-4 card p-0 ">
+                  <div class="col-lg-4  card  ">
                     <Link to={`/edit/${e.id}`}>
                       <img
                         src={e.coverimage}
