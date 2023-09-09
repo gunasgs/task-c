@@ -1,38 +1,142 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* login */
+.login-con {
+  background: rgb(254, 177, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 177, 4, 1) 0%,
+    rgba(249, 212, 66, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  background-color: #fff;
+  height: 400px;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.login-head {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.email-inp:focus,
+.pass-inp:focus {
+  box-shadow: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.email-inp::placeholder,
+.pass-inp::placeholder {
+  color: rgb(202, 202, 202);
+  opacity: 1;
+}
+.label {
+  display: block;
+}
+.login-btn {
+  background-color: #feaf00;
+  width: 100%;
+}
+.login-btn:hover {
+  border: 1px solid #feaf00;
+}
+.loading {
+  color: #feaf00;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: loading 1s infinite;
+}
+@keyframes loading {
+  0%,
+  40%,
+  100% {
+    transform: translatex(0);
+  }
+  20% {
+    transform: translatex(-20px);
   }
 }
+.for-link {
+  color: #feaf00;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* navbar */
+.navbar {
+  color: #fff;
+  background-color: #566bd6;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+/* home page */
+.card {
+  width: 364px;
+  margin: 5px;
+}
+.list-img {
+  height: 250px;
+  width: 100%;
+}
+.home-loading {
   display: flex;
-  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+/* add form */
+.form-con {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.form-box {
+  width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+/* edit  */
+.card-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.edit-img {
+  width: 400px;
+  height: 40vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-detail {
+  width: 380px;
+  text-align: center;
+  margin: 15px 0;
+}
+.edit-btn {
+  width: 150px;
+  background-color: #feaf00;
+  color: #fff;
+}
+.edit-btn:hover {
+  border: 1px solid #feaf00;
+}
+.edit-btn2 {
+  width: 150px;
+  background-color: #ff0000;
+  color: #fff;
+}
+.edit-btn2:hover {
+  border: 1px solid #ff0000;
 }
