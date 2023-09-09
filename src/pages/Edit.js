@@ -128,7 +128,7 @@ function Edit() {
               <p className=" home-loading">Loading ...</p>
             ) : (
               <div>
-                <h3 class="card-title text-center my-3 ">{view.name}</h3>
+                <h3 className="card-title text-center my-3 ">{view.name}</h3>
                 <img
                   src={view.coverimage}
                   className="edit-img"

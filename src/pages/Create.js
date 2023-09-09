@@ -43,8 +43,8 @@ function Create() {
       <Navbar />
       <div className="container form-con">
         <form className="form-box" onSubmit={formik.handleSubmit}>
-          <div class="mb-3 mt-4">
-            <label class="form-label">Name</label>
+          <div className="mb-3 mt-4">
+            <label className="form-label">Name</label>
             <input
               type="text"
               name="name"
@@ -55,8 +55,8 @@ function Create() {
               required
             />
           </div>
-          <div class="mb-3">
-            <label class="form-label">Detail</label>
+          <div className="mb-3">
+            <label className="form-label">Detail</label>
             <textarea
               type="text"
               name="detail"
@@ -67,8 +67,8 @@ function Create() {
               required
             />
           </div>
-          <div class="mb-3">
-            <label class="form-label">Coverimage</label>
+          <div className="mb-3">
+            <label className="form-label">Coverimage</label>
             <input
               type="text"
               name="coverimage"
@@ -79,8 +79,8 @@ function Create() {
               required
             />
           </div>
-          <div class="mb-3">
-            <label class="form-label">Latitude</label>
+          <div className="mb-3">
+            <label className="form-label">Latitude</label>
             <input
               type="text"
               name="latitude"
@@ -91,8 +91,8 @@ function Create() {
               required
             />
           </div>
-          <div class="mb-3">
-            <label class="form-label">Longitude</label>
+          <div className="mb-3">
+            <label className="form-label">Longitude</label>
             <input
               type="text"
               name="longitude"
@@ -104,7 +104,7 @@ function Create() {
             />
           </div>
 
-          <button type="submit" class="btn btn-primary submit-btn w-100">
+          <button type="submit" className="btn btn-primary submit-btn w-100">
             Submit
           </button>
         </form>

@@ -3,31 +3,31 @@ import React from "react";
 function EditModal({ formik }) {
   return (
     <div
-      class="modal fade"
+      className="modal fade"
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-md">
-        <div class="modal-content ">
-          <div class="modal-header ">
-            <h5 class="modal-title " id="exampleModalLabel">
+      <div className="modal-dialog modal-md">
+        <div className="modal-content ">
+          <div className="modal-header ">
+            <h5 className="modal-title " id="exampleModalLabel">
               Edit
             </h5>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div className="modal-body">
             <div className="container-fluid ">
-              <div class="row g-4  ">
+              <div className="row g-4  ">
                 <form className="form-box" onSubmit={formik.handleSubmit}>
-                  <div class="mb-3 ">
-                    <label class="form-label">Name</label>
+                  <div className="mb-3 ">
+                    <label className="form-label">Name</label>
                     <input
                       type="text"
                       name="name"
@@ -38,8 +38,8 @@ function EditModal({ formik }) {
                       required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label class="form-label">Detail</label>
+                  <div className="mb-3">
+                    <label className="form-label">Detail</label>
                     <textarea
                       type="text"
                       name="detail"
@@ -50,8 +50,8 @@ function EditModal({ formik }) {
                       required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label class="form-label">Coverimage</label>
+                  <div className="mb-3">
+                    <label className="form-label">Coverimage</label>
                     <input
                       type="text"
                       name="coverimage"
@@ -62,8 +62,8 @@ function EditModal({ formik }) {
                       required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label class="form-label">Latitude</label>
+                  <div className="mb-3">
+                    <label className="form-label">Latitude</label>
                     <input
                       type="text"
                       name="latitude"
@@ -74,8 +74,8 @@ function EditModal({ formik }) {
                       required
                     />
                   </div>
-                  <div class="mb-3">
-                    <label class="form-label">Longitude</label>
+                  <div className="mb-3">
+                    <label className="form-label">Longitude</label>
                     <input
                       type="text"
                       name="longitude"
@@ -89,7 +89,7 @@ function EditModal({ formik }) {
 
                   <button
                     type="submit"
-                    class="btn edit-btn w-100 "
+                    className="btn edit-btn w-100 "
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   >

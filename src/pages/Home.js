@@ -40,23 +40,23 @@ function Home() {
           <p className=" home-loading">Loading ...</p>
         ) : (
           <div className="row g-2 ">
-            {data.map((e) => {
+            {data.map((e, i) => {
               return (
                 <>
-                  <div class="col-lg-4  card  ">
+                  <div className="col-lg-4  card  " key={e.id}>
                     <Link to={`/edit/${e.id}`}>
                       <img
                         src={e.coverimage}
-                        class="card-img-top list-img"
+                        className="card-img-top list-img"
                         alt="img"
                       />
-                      <div class="card-body">
-                        <h5 class="card-title text-dark">{e.name}</h5>
-                        <p class="card-text text-secondary text-truncate">
+                      <div className="card-body">
+                        <h5 className="card-title text-dark">{e.name}</h5>
+                        <p className="card-text text-secondary text-truncate">
                           {e.detail}
                         </p>
-                        <p class="card-text">
-                          <small class="text-primary text-uppercase">
+                        <p className="card-text">
+                          <small className="text-primary text-uppercase">
                             Learn More
                           </small>
                         </p>
