@@ -28,7 +28,7 @@ function Create() {
           // }
         );
 
-        swal(" Added Successfull", {
+        swal(" Added Successfully", {
           icon: "success",
           timer: 2000,
         });

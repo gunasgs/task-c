@@ -71,7 +71,7 @@ function Edit() {
             values
           );
           fetchAll();
-          swal(" Updated Successfull", {
+          swal(" Updated Successfully", {
             icon: "success",
             timer: 2000,
           });
@@ -125,7 +125,7 @@ function Edit() {
         <div className="row">
           <div className="col-lg-12 card-edit mb-2">
             {loading ? (
-              <p className="loading home-loading">Loading ...</p>
+              <p className=" home-loading">Loading ...</p>
             ) : (
               <div>
                 <h3 class="card-title text-center my-3 ">{view.name}</h3>

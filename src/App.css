@@ -97,6 +97,25 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.home-loading {
+  color: #0066fe;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: loading2 1s infinite;
+}
+@keyframes loading2 {
+  0%,
+  40%,
+  100% {
+    transform: translatey(0);
+  }
+  20% {
+    transform: translatey(-20px);
+  }
+}
 /* add form */
 .form-con {
   display: flex;

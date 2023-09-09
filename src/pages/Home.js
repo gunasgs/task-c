@@ -37,7 +37,7 @@ function Home() {
           Around The world
         </h3>
         {loading ? (
-          <p className="loading home-loading">Loading ...</p>
+          <p className=" home-loading">Loading ...</p>
         ) : (
           <div className="row g-2 ">
             {data.map((e) => {
